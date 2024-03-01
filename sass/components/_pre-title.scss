@@ -1,0 +1,30 @@
+.pre-title {
+    @include font(11px, 600, 15px, 0.1em);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        width: 63px;
+        height: 1px;
+
+        margin-right: 21px;
+    }
+}
+
+.pre-title_color_dark {
+    color: var(--secondary-text-color);
+
+    &::before {
+        background-color: var(--secondary-title-color);
+    }
+}
+
+.pre-title_color_light {
+    color: rgba(157, 164, 189, 0.6);
+
+    &::before {
+        background-color: rgba(157, 164, 189, 0.6);
+    }
+}
